@@ -1,0 +1,16 @@
+.link{
+  color: rgb(164, 198, 228);
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  padding: 0 15px;
+}
+.link:hover{
+  background-color: lightgray;
+  border-radius: 6px;
+  color: black;
+  cursor: pointer;
+}
+.navbar{
+  display: flex;
+}
