@@ -14,7 +14,7 @@ function About() {
         We say, "Stop the insanity!"<br/><br/>
         <span className="bold italic">Smoke Signals</span> is an 'ad free' service!" No ads will be forced upon you.  Ever!<br/><br/>
         However, we do realize we can make money from promoting ads. So we have a section where you can search out products you yourself are looking for, and you can choose the ads you want to see. No you can't preselect them and have them delivered to you. But we have a great search feature, that allows you to search for a type of ad and save your search criteria, so that those and similar ads are available <span className="bold italic">when you visit the ad section</span><br/><br/>
-        We say, "Stop the insanity!"</p>
+        </p>
       </div>
     </div>
   );
