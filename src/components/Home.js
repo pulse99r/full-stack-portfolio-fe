@@ -1,4 +1,5 @@
 import "./css/Home.css";
+import Messages from "./Messages"
 
 function Home() {
   const showLogin = ()=>{
@@ -25,7 +26,7 @@ function Home() {
       </div>
       <div className="right-sidebar">
         <h3>News Feed</h3>
-        
+        <Messages/>
        
           </div>
     </div>

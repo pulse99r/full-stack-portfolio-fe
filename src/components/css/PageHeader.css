@@ -1,44 +1,88 @@
 .app-header{
   display: flex;
   flex-direction: row;
-  text-align: center;
+  text-align: left;
+  justify-content: left;
 }
-h1{
-  font-size: 2.5em;
+.header1{
+  font-size: 50px;
+  margin-bottom: -10px;
+}
+.logo-container{
+  min-width: 30%;
+  max-width: 35%;
+  text-align: left;
+}
+.logo-img{
+  min-width: 60%;
+  max-width: 70%;
+  border:1px;
+  border-radius: 5px;
+  margin: 40px 15px 20px 15px;
+}
+.message{
+  font-size: 12px;
+}
+.navbar{
+  position: absolute;
+  top: 82%;
+}
+p{
+  padding: 33px 20px 0 0;
 }
 .page-header {
-  text-align: center;
   background-color: #2c5642;
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   color:aliceblue;
+  display: flex;
   margin: 10px 2%;
+  text-align: left;
   padding: 2px;
-  width: 90%;
+  width: 91%;
 }
-.logo{
-  max-width: 18%;
-  border:1px;
-  border-radius: 5px;
-  margin: 40px 15px 20px 15px;
+.page-header{
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  position: relative;
 }
-p{
-  padding: 33px 20px 0 0;
+td{
+  column-width: 275px;
+  font-size: 15px;
+}
+.message{
+  align-items: center;
+  overflow-y:visible;
+}
+.msg{
+  border: 1px solid gray;
+  background-color: gray;
+}
+@media (max-width: 643px ) {
+  .header{
+    font-size: smaller;
+  }
 }
 @media (max-width:580px ) {
   .app-header{
-    flex-direction: column;
+    /* flex-direction: column;
+    text-align: center;
+    align-items: center; */
+  }
+  .header{
+    display: none;
+  }
+  .header-container{
+    flex-direction: row;
     text-align: center;
     align-items: center;
   }
-  .header-p{
-    display: none;
-  }
-  /* .header1{
-    display: none;
-  } */
-  .logo{
-    max-width: 60%;
+  .logo-img{
+    min-width: 50%;
+    max-width: 100%;
   }
 }

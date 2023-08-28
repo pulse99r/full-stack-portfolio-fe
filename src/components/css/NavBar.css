@@ -3,7 +3,8 @@
   text-decoration: none;
   list-style: none;
   list-style-type: none;
-  padding: 0 15px;
+  padding: 0 5px;
+
 }
 .link:hover{
   background-color: lightgray;
@@ -13,5 +14,34 @@
 }
 .navbar{
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 10px;
+}
+@media (max-width:643px ) {
+  .navbar{
+    font-size: 12px;
+  }
+}
+@media (max-width:580px ) {
+  .navbar{
+    flex-direction: column;
+    font-size: 14px;
+    text-align: center;
+    top: 25px;
+    text-align: center;
+    margin-left: 40px;
+  }
+}
+@media (max-width:365px ) {
+  .navbar{
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@media (max-width:365px ) {
+  .navbar{
+    font-size: 12px;
+    text-align: center;
+  }
 }

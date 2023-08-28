@@ -8,13 +8,19 @@ function Home() {
   return (
     <div className="page-header">
       <header className="app-header">
-       <img src={logo} alt="Logo" className="logo"/>
-       <div>
-        <h1 className='header1'>Smoke Signals</h1>
-        <h2 className='header1'>Messaging App</h2>
-       </div>
+        <div className="logo-container">
+          <img src={logo} alt="Logo" className="logo-img"/>
+        </div>
+        <div className="header-container">
+          <span className='header'>
+            <h1 className='header1'>Smoke Signals</h1>
+            <h2 className='header2'>Messaging App</h2>
+          </span>
+          <div className='navbar'>
+            <Nav />
+          </div>
+        </div>
       </header>
-      <Nav />
     </div>
   );
 }

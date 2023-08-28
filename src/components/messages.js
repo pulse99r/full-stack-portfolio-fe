@@ -1,23 +1,23 @@
 import './css/Messages.css';
 
 import { useState, useEffect } from "react";
-import Message from "./Message"
+import Message from "./Message.js"
 import axios from "axios";
 
 const API = process.env.REACT_APP_API_URL;
-console.log(API)
+// console.log("API 1:==>",API)
 
 function Messages() {
   const [messages, setMessages] = useState([]);
-  console.log(API)
+  // console.log("API 2:==>",API)
 
  useEffect(() => {
   axios
     .get(`${API}/messages`)
     .then((response) => setMessages(response.data))
+    // .then((response) => console.log(response.json))
     .catch((c) => console.warn("catch", c));
-}, []);
-
+  }, []);
 
   return (
     <div className="messages">
@@ -27,7 +27,6 @@ function Messages() {
             <tr>
               <th>Topic</th>
               <th>Sent At</th>
-              <th>See this Message</th>
             </tr>
           </thead>
           <tbody>
@@ -40,7 +39,5 @@ function Messages() {
     </div>
   );
 }
-// =========================
 
-// =========================
 export default Messages;
