@@ -10,7 +10,6 @@ const API = process.env.REACT_APP_API_URL;
 function Friends() {
   const [friends, setFriends] = useState([]);
 
-
  useEffect(() => {
   axios
     .get(`${API}/users`)

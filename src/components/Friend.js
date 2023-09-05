@@ -5,10 +5,10 @@ function Friend ({ friend, id }) {
   return (
     <tr className="friend">
       <td className="msg msg_topic">
-        <Link to={`/friends/${id}`}>{friend.f_name}</Link>
+        <Link to={`/users/${id}`}>{friend.f_name}</Link>
       </td>
       <td className="msg msg_sent_at">
-        <Link to={`/friends/${id}`}>{friend.l_name}</Link>
+        <Link to={`/users/${id}`}>{friend.l_name}</Link>
       </td>
   
     </tr>

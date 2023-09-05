@@ -7,8 +7,8 @@ import { response } from "express";
 const API = process.env.REACT_APP_API_URL;
 // console.log(API)
 
-function Transactions() {
-  const [Users, setUsers] = useState([]);
+function UserList() {
+  const [users, setUsers] = useState([]);
   console.log(API)
   
   useEffect(() => {
@@ -22,12 +22,23 @@ function Transactions() {
   return (
     <div className="users">
       <section>
-      {Users.map((user, index) => {
-        return <User key={index} user={user} index={index} />;
-      }
+        <table>
+          <thead>
+            <tr>
+              <th>Topic</th>
+              <th>Sent At</th>
+            </tr>
+          </thead>
+          <tbody>
+            {users.map((user, id) => {
+              return <User key={id} user={user} id={id} />;
+            })}
+          </tbody>
+        </table>
       </section>
     </div>
   );
+
 }
 
-export default Transactions;
+export default UserList;

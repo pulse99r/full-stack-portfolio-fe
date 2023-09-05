@@ -1,10 +1,10 @@
 import "./css/NavBar.css";
-import Userlogin from "./UserLogin";
+// import Userlogin from "./UserLogin";
 import { Link } from "react-router-dom";
 import About from "./About"
 
 function Nav() {
-  const showLogin = ()=>{
+  const handleLogin = ()=>{
     
   }
   return (
@@ -13,7 +13,7 @@ function Nav() {
       <Link to='/about' className="link">About</Link>
       <Link to='/friends' className="link">Friends</Link>
       <Link to='/messages' className="link">Messages</Link>
-      <Link to='/login' className="link">Login</Link>
+      <Link to='/login' className="link" onclick={handleLogin}>Login</Link>
       <Link to='/logout' className="link">Logout</Link>
     </div>
   );

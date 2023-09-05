@@ -10,10 +10,10 @@ const handleLogin = (e) =>{
   return (
     <form onSubmit={handleLogin()}>
       <label>Email:
-        <input type="email" name="email" />
+        <input type="email" name="email" placeholder=''/>
       </label>
       <label>Password:
-        <input type="password" name="password" />
+        <input type="password" name="password"  placeholder=''/>
       </label>
       <input type="submit" value="Login" />
     </form>
